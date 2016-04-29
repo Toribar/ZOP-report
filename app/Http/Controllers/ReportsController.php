@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Report;
+use Auth;
 
 class ReportsController extends Controller
 {
@@ -15,7 +17,9 @@ class ReportsController extends Controller
      */
     public function index()
     {
-        //
+        $reports = Report::all();
+        dd($reports);
+        return view('reports.index');
     }
 
     /**
@@ -36,7 +40,11 @@ class ReportsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $report = new Report($request->all());
+
+        Auth::user()->reports()->save($report);
+
+        return redirect()->route('reports.index');
     }
 
     /**
