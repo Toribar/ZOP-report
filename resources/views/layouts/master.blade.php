@@ -20,6 +20,7 @@
     <style>
         body {
             font-family: 'Lato';
+            background-color: #ECEFF1;
         }
         .fa-btn {
             margin-right: 6px;

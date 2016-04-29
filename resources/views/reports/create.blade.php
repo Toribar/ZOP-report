@@ -9,7 +9,7 @@
                     <strong>OBLASTI ZAŠTITE OD POŽARA</strong>
                 </h3>
             </div>
-            <form method="post" action="/" class="form-horizontal">
+            <form method="POST" class="form-horizontal" enctype="multipart/form-data" action="{{ route('reports.store') }}">
                 @include('report-form.header-form')
 
                 <div class="page-header text-center ">
@@ -18,8 +18,8 @@
                 @include('report-form.3_1')
                 @include('report-form.3_2')
                 @include('report-form.3_3')
-
-                </form>
+                @include('report-form.submit')
+            </form>
             </div>
         </div>
     </div>

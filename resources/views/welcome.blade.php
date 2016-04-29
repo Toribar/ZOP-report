@@ -18,6 +18,7 @@
                 @include('report-form.3_1')
                 @include('report-form.3_2')
                 @include('report-form.3_3')
+                @include('report-form.submit')
 
                 </form>
             </div>

@@ -11,10 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/', function () {
+    return redirect()->route('reports.create');
+});
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::resource('reports', 'ReportsController');
+});
+
+
