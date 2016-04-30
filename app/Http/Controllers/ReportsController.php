@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Report;
+use App\Image;
 use Auth;
 
 class ReportsController extends Controller
@@ -18,8 +19,8 @@ class ReportsController extends Controller
     public function index()
     {
         $reports = Report::all();
-        dd($reports);
-        return view('reports.index');
+        // dd($reports);
+        return view('reports.index', compact('reports'));
     }
 
     /**
