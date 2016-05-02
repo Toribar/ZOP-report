@@ -18,8 +18,8 @@ class ReportsController extends Controller
      */
     public function index()
     {
-        $reports = Report::all();
-        // dd($reports);
+        $reports = Report::paginate();
+
         return view('reports.index', compact('reports'));
     }
 
@@ -56,7 +56,7 @@ class ReportsController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('reports.show');
     }
 
     /**
