@@ -12,13 +12,15 @@
 
         <div class="collapse navbar-collapse" id="app-navbar-collapse">
             <ul class="nav navbar-nav">
-                <li>
-                    <a href="{{ route('reports.index') }}">Izveštaji</a>
-                </li>
+                @if (Auth::check())
+                    <li>
+                        <a href="{{ route('reports.index') }}">Izveštaji</a>
+                    </li>
 
-                <li>
-                    <a href="{{ route('reports.create') }}">Novi izveštaj</a>
-                </li>
+                    <li>
+                        <a href="{{ route('reports.create') }}">Novi izveštaj</a>
+                    </li>
+                @endif
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
