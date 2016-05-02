@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 Route::group(['middleware' => 'auth'], function () {
     Route::resource('reports', 'ReportsController');
+    Route::resource('images', 'ImagesController');
 });
 
 
