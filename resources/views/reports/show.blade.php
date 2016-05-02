@@ -66,7 +66,9 @@
                             <div class="row">
                                 @foreach ($report->images as $image)
                                     <div class="col-xs-4">
-                                        <img class="img-responsive" src="/uploads/{{ $image->image_path }}">
+                                        <a href="/uploads/{{ $image->image_path }}">
+                                            <img class="img-responsive" src="/uploads/{{ $image->image_path }}">
+                                        </a>
                                     </div>
                                 @endforeach
                             </div>
