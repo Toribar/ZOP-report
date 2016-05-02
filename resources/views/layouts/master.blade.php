@@ -11,6 +11,10 @@
     </head>
 
     <body id="app-layout">
+        <div class="loader">
+            <i class="fa fa-circle-o-notch fa-spin fa-5x"></i>
+        </div>
+
         @include('partials.navbar')
         @yield('content')
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
