@@ -56,7 +56,9 @@ class ReportsController extends Controller
      */
     public function show($id)
     {
-        return view('reports.show');
+        $report = Report::findOrFail($id);
+
+        return view('reports.show', compact('report'));
     }
 
     /**
