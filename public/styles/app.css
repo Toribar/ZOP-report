@@ -3,10 +3,6 @@ body {
     padding-top: 70px;
 }
 
-.fa-btn {
-    margin-right: 6px;
-}
-
 .btn-file {
     position: relative;
     overflow: hidden;

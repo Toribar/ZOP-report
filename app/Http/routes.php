@@ -13,11 +13,8 @@
 
 Route::auth();
 
-Route::get('/', function () {
-    return redirect()->route('reports.create');
-});
-
 Route::group(['middleware' => 'auth'], function () {
+    Route::get('/', 'ReportsController@index');
     Route::resource('reports', 'ReportsController');
     Route::resource('images', 'ImagesController');
 });
