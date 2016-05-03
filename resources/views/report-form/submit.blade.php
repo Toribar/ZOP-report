@@ -6,7 +6,7 @@
             </div>
 
             <div class="col-xs-6">
-                <a href="#" class="btn btn-default btn-block">Odustani</a>
+                <a href="{{ route('reports.index') }}" class="btn btn-default btn-block">Odustani</a>
             </div>
         </div>
     </div>
