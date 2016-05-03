@@ -15,27 +15,27 @@
     <table class="table">
         <tr>
             <td class="nowrap" width="1%">ZAVODNI BROJ:</td>
-            <td class="border"></td>
+            <td class="border">{{ $report->institution_number }}</td>
         </tr>
 
         <tr>
             <td class="nowrap">OBJEKAT:</td>
-            <td class="border"></td>
+            <td class="border">{{ $report->object }}</td>
         </tr>
 
         <tr>
             <td class="nowrap">LOKACIJA:</td>
-            <td class="border"></td>
+            <td class="border">{{ $report->location }}</td>
         </tr>
 
         <tr>
             <td class="nowrap">KATASTARSKA PARCELA:</td>
-            <td class="border"></td>
+            <td class="border">{{ $report->cadaster }}</td>
         </tr>
 
         <tr>
             <td class="nowrap">VLASNIK OBJEKTA:</td>
-            <td class="border"></td>
+            <td class="border">{{ $report->object_owner }}</td>
         </tr>
     </table>
 
@@ -144,39 +144,39 @@
     <table class="table">
         <tr>
             <td class="nowrap" width="1%">Objekat:</td>
-            <td class="border"></td>
+            <td class="border">{{ $report->form_data->object }}</td>
         </tr>
 
         <tr>
             <td class="nowrap" width="1%">Povrsina objekta:</td>
-            <td class="border"></td>
+            <td class="border">{{ $report->form_data->building_area }}</td>
         </tr>
 
         <tr>
             <td class="nowrap" width="1%">Vreme izgradnje objekta:</td>
-            <td class="border"></td>
+            <td class="border">{{ $report->form_data->building_time }}</td>
         </tr>
 
         <tr>
             <td class="nowrap" width="1%">Povrsina objekta:</td>
-            <td class="border"></td>
+            <td class="border">{{ $report->form_data->building_area2 }}</td>
         </tr>
     </table>
 
     <p>Status objekta:</p>
     <table class="table table-border">
         <tr>
-            <td>A</td>
+            <td class="{{ $report->isChosen('object_status', 0) }}">A</td>
             <td>objekat izgradjen bez gradjevinske dozvole</td>
         </tr>
 
         <tr>
-            <td>B</td>
+            <td class="{{ $report->isChosen('object_status', 1) }}">B</td>
             <td>objekat izgradjen na osnovu izdate gradj. dozvole od koje je odstupljeno u toku izgradnje</td>
         </tr>
 
         <tr>
-            <td>C</td>
+            <td class="{{ $report->isChosen('object_status', 2) }}">C</td>
             <td>Objekat za koji je izdata gradjeinska dozvola ali nije izdata upotrebna dozvola</td>
         </tr>
     </table>
@@ -187,7 +187,8 @@
         <tr>
             <td class="nowrap" width="1%">1.Da li postoji Rešenje od Uprave za vanredne situacije na
             tehnicku dokumentaciju<br> na objekat?</td>
-            <td class="border">DA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NE</td>
+            <td class="border {{ $report->isChosen('param_3_1_1', 0) }}">DA</td>
+            <td class="border {{ $report->isChosen('param_3_1_1', 1) }}">NE</td>
         </tr>
     </table>
 

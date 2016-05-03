@@ -4,9 +4,6 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-use App\User;
-use App\Image;
-
 class Report extends Model
 {
     protected $casts = [
@@ -27,4 +24,13 @@ class Report extends Model
         return $this->hasMany(Image::class);
     }
 
+    public function getFormDataAttribute($value)
+    {
+        return json_decode($value);
+    }
+
+    public function isChosen($key, $value)
+    {
+        return $this->form_data->$key == $value ? 'chosen' : null;
+    }
 }
