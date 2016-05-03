@@ -78,6 +78,7 @@ hr {
 .table-condensed td {
     padding: 0;
     padding-right: 8pt;
+    width: 100%;
 }
 
 .table td {
@@ -132,6 +133,11 @@ tr.border-bottom td, tr.border-bottom th {
 h1 {
     font-weight: normal;
     font-size: 14pt;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 13pt;
 }
 
 .border {
