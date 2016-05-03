@@ -18,7 +18,7 @@ class ReportsController extends Controller
      */
     public function index()
     {
-        $reports = Report::paginate();
+        $reports = Report::with('user')->paginate();
 
         return view('reports.index', compact('reports'));
     }
