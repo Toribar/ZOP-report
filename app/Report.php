@@ -31,6 +31,10 @@ class Report extends Model
 
     public function isChosen($key, $value)
     {
-        return $this->form_data->$key == $value ? 'chosen' : null;
+        if (isset($this->form_data->$key)) {
+            return $this->form_data->$key == $value ? 'chosen' : null;
+        }
+
+        return null;
     }
 }
