@@ -45,7 +45,7 @@ class ReportsController extends Controller
 
         Auth::user()->reports()->save($report);
 
-        return redirect()->route('reports.index');
+        return redirect()->route('reports.show', $report->id);
     }
 
     /**
