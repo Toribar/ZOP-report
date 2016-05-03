@@ -1,0 +1,130 @@
+@page {
+    margin-top: 1.25cm;
+    margin-bottom: 2.75cm;
+    margin-left: 2cm;
+    margin-right: 1cm;
+}
+
+body {
+    font-family: sans-serif;
+    /*margin: 0.5cm 0;*/
+    text-align: justify;
+    font-size: 0.70em;
+}
+
+.header,
+.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    /*color: #aaa;*/
+    font-size: 0.9em;
+}
+
+.header {
+    top: 0;
+    border-bottom: 0.1pt solid #aaa;
+    padding-bottom: 4pt;
+}
+
+.footer {
+    bottom: 0;
+    border-top: 0.1pt solid #aaa;
+    padding-top: 4pt;
+}
+
+.header table,
+.footer table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+.header td,
+.footer td {
+    padding: 0;
+    width: 50%;
+}
+
+.page-number {
+    text-align: right;
+}
+
+.page-number:before {
+    text-align: right;
+    content: "Strana " counter(page);
+}
+
+hr {
+    page-break-after: always;
+    border: 0;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-border, .table-border td {
+    border: solid thin;
+    border-left: none;
+    border-right: none;
+}
+
+.table th,
+.table td {
+    padding: 2pt 0;
+    padding-right: 2pt;
+}
+
+.table-condensed th,
+.table-condensed td {
+    padding: 0;
+    padding-right: 8pt;
+}
+
+.table td {
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.table th {
+    font-weight: bold;
+    /*padding: 0.2em;*/
+    vertical-align: middle;
+    text-align: left;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.line {
+    height: 1px;
+    border-bottom: solid thin;
+}
+
+.line-double {
+    height: 1px;
+    border-bottom: 2pt double black;
+}
+
+tr.border-top td, tr.border-top th {
+    border-top: solid thin;
+}
+
+tr.border-bottom td, tr.border-bottom th {
+    border-bottom: solid thin;
+}
+
+.border-top {
+    border-top: solid thin;
+}
+
+.border-bottom {
+    border-top: solid thin;
+}

@@ -15,6 +15,7 @@ Route::auth();
 
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/', 'ReportsController@index');
+    Route::get('reports/{reports}/pdf', ['as' => 'reports.pdf', 'uses' => 'ReportsController@pdf']);
     Route::resource('reports', 'ReportsController');
     Route::resource('images', 'ImagesController');
 });

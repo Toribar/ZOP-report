@@ -52,7 +52,7 @@
                     </div>
 
                     <div class="panel-footer">
-                        <a href="#" class="btn btn-success">PDF</a>
+                        <a href="{{ route('reports.pdf', $report->id) }}" class="btn btn-success">PDF</a>
                     </div>
                 </div>
 

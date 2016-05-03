@@ -2,17 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
-use App\Http\Requests;
-use App\Report;
-use App\Image;
+use PDF;
 use Auth;
+use App\Image;
+use App\Report;
+use App\Http\Requests;
+use Illuminate\Http\Request;
 
 class ReportsController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the reports.
      *
      * @return \Illuminate\Http\Response
      */
@@ -24,7 +24,7 @@ class ReportsController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new report.
      *
      * @return \Illuminate\Http\Response
      */
@@ -34,7 +34,7 @@ class ReportsController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created report in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -49,7 +49,7 @@ class ReportsController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified report.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -62,7 +62,7 @@ class ReportsController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editing the specified report.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -73,7 +73,7 @@ class ReportsController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified report in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
@@ -85,7 +85,7 @@ class ReportsController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified report from storage.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -93,5 +93,20 @@ class ReportsController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    /**
+     * Download report as PDF.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function pdf($id)
+    {
+        $report = Report::findOrFail($id);
+
+        $filename = str_slug($report->object . ' ' . $report->institution_number) . '.pdf';
+
+        return PDF::loadView('reports.pdf', compact('report'))->download($filename);
     }
 }
