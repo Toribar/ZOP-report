@@ -107,6 +107,8 @@ class ReportsController extends Controller
 
         $filename = str_slug($report->object . ' ' . $report->institution_number) . '.pdf';
 
+        // return view('reports.pdf', compact('report'));
+
         // return PDF::loadView('reports.pdf', compact('report'))->download($filename);
         return PDF::loadView('reports.pdf', compact('report'))->stream();
     }

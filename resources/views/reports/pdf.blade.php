@@ -272,10 +272,15 @@
 
         <tr>
             <td>6.</td>
-            <td>Fotografija spoljašnje hidratske mreže:</td>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td colspan="2">Fotografija spoljašnje hidratske mreže:</td>
         </tr>
+    </table>
 
+    @foreach ($report->images as $image)
+        <img style="width: 100%" src="uploads/{{ $image->image_path }}">
+    @endforeach
+
+    <table class="table table-border">
         <tr>
             <td style="height: 130px;" colspan="3">
                 <u>Napomena:</u>
