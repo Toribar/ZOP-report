@@ -20,7 +20,7 @@ class CreateReportsTable extends Migration
             $table->string('location');
             $table->string('cadaster');
             $table->string('object_owner');
-            $table->json('form_data');
+            $table->text('form_data');
             $table->timestamps();
         });
     }
