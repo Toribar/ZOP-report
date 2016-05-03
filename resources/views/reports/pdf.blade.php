@@ -215,17 +215,17 @@
         <tr>
             <td>1.</td>
             <td>Da li je ulaz na plac adekvatan za vartrogasna vozila?</td>
-            <td>DA</td>
-            <td>NE</td>
-            <td>DELIMICNO</td>
+            <td class="{{ $report->isChosen('param_3_2_1', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_2_1', 1) }}">NE</td>
+            <td class="{{ $report->isChosen('param_3_2_1', 2) }}">DELIMICNO</td>
         </tr>
 
         <tr>
             <td>2.</td>
             <td>Da li je obezbedjen adekvatan pristup vatrogasnih vozila objektu ? (požarni krug)</td>
-            <td>DA</td>
-            <td>NE</td>
-            <td>DELIMICNO</td>
+            <td class="{{ $report->isChosen('param_3_2_2', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_2_2', 1) }}">NE</td>
+            <td class="{{ $report->isChosen('param_3_2_2', 2) }}">DELIMICNO</td>
         </tr>
 
         <tr>
@@ -239,17 +239,17 @@
         <tr>
             <td>3.</td>
             <td>Da li je objekat  pokriven spoljašnjom hidrantskom mrežom?</td>
-            <td>DA</td>
-            <td>NE</td>
-            <td>DELIMICNO</td>
+            <td class="{{ $report->isChosen('param_3_2_3', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_2_3', 1) }}">NE</td>
+            <td class="{{ $report->isChosen('param_3_2_3', 2) }}">DELIMICNO</td>
         </tr>
 
         <tr>
             <td>4.</td>
             <td>Da li je hidrantska mreža prikljucena na javni sistem za navodnjavanje ili su obezbedjeni posebni rezervoari?</td>
-            <td>DA</td>
-            <td>NE</td>
-            <td>DELIMICNO</td>
+            <td class="{{ $report->isChosen('param_3_2_4', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_2_4', 1) }}">NE</td>
+            <td class="{{ $report->isChosen('param_3_2_4', 2) }}">DELIMICNO</td>
         </tr>
 
         <tr>
@@ -291,8 +291,8 @@
         <tr>
             <td class="border">7.</td>
             <td class="border">Da li je obeleženo sabirno mesto za evakuaciju iz objekta?</td>
-            <td class="border">DA</td>
-            <td class="border">NE</td>
+            <td class="border {{ $report->isChosen('param_3_2_7', 0) }}">DA</td>
+            <td class="border {{ $report->isChosen('param_3_2_7', 1) }}">NE</td>
         </tr>
     </table>
 
@@ -366,33 +366,33 @@
         <tr>
             <td>3.</td>
             <td>Da li su evakuacioni izlazi prohodni?&nbsp;&nbsp;&nbsp;&nbsp;</td>
-            <td>DA</td>
-            <td>NE</td>
-            <td>DELIMICNO</td>
+            <td class="{{ $report->isChosen('param_3_3_3', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_3_3', 1) }}">NE</td>
+            <td class="{{ $report->isChosen('param_3_3_3', 2) }}">DELIMICNO</td>
         </tr>
 
         <tr>
             <td>4.</td>
             <td>Da li su evakuacioni izlazi obleženi na adekvatan nacin?</td>
-            <td>DA</td>
-            <td>NE</td>
-            <td>DELIMICNO</td>
+            <td class="{{ $report->isChosen('param_3_3_4', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_3_4', 1) }}">NE</td>
+            <td class="{{ $report->isChosen('param_3_3_4', 2) }}">DELIMICNO</td>
         </tr>
 
         <tr>
             <td>5.</td>
             <td>Da li je objekat podeljen na protivpožarne zone?</td>
-            <td>DA</td>
-            <td>NE</td>
-            <td>DELIMICNO</td>
+            <td class="{{ $report->isChosen('param_3_3_5', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_3_5', 1) }}">NE</td>
+            <td class="{{ $report->isChosen('param_3_3_5', 2) }}">DELIMICNO</td>
         </tr>
 
         <tr>
             <td>6.</td>
             <td>Da li su na prelazu dve protivpožarne zone montirana vrata otporna prema požaru?</td>
-            <td>DA</td>
-            <td>NE</td>
-            <td>DELIMICNO</td>
+            <td class="{{ $report->isChosen('param_3_3_6', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_3_6', 1) }}">NE</td>
+            <td class="{{ $report->isChosen('param_3_3_6', 2) }}">DELIMICNO</td>
         </tr>
     </table>
 
@@ -402,25 +402,25 @@
         <tr>
             <td>7.</td>
             <td>Da li su vrata otporna prema požaru ispravna i prohodna?</td>
-            <td>DA</td>
-            <td>NE</td>
-            <td>DELIMICNO</td>
+            <td class="{{ $report->isChosen('param_3_3_7', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_3_7', 1) }}">NE</td>
+            <td class="{{ $report->isChosen('param_3_3_7', 2) }}">DELIMICNO</td>
         </tr>
 
         <tr>
             <td>8.</td>
             <td>Da li su prohodni svi evakuacioni putevi?</td>
-            <td>DA</td>
-            <td>NE</td>
-            <td>DELIMICNO</td>
+            <td class="{{ $report->isChosen('param_3_3_8', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_3_8', 1) }}">NE</td>
+            <td class="{{ $report->isChosen('param_3_3_8', 2) }}">DELIMICNO</td>
         </tr>
 
         <tr>
             <td>9.</td>
             <td>Da li su svi evakuacioni putevi obleženi na adekvatan način?</td>
-            <td>DA</td>
-            <td>NE</td>
-            <td>DELIMICNO</td>
+            <td class="{{ $report->isChosen('param_3_3_9', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_3_9', 1) }}">NE</td>
+            <td class="{{ $report->isChosen('param_3_3_9', 2) }}">DELIMICNO</td>
         </tr>
 
         <tr>
@@ -434,9 +434,9 @@
         <tr>
             <td>10.</td>
             <td>Da li su na vidnom mestu istaknuti planovi evakuacije i pravila za postupanje u slučaju požara?</td>
-            <td>DA</td>
-            <td>NE</td>
-            <td>DELIMICNO</td>
+            <td class="{{ $report->isChosen('param_3_3_10', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_3_10', 1) }}">NE</td>
+            <td class="{{ $report->isChosen('param_3_3_10', 2) }}"DELIMICNO</td>
         </tr>
 
         <tr>
@@ -456,32 +456,32 @@
         <tr>
             <td>a</td>
             <td>Stabilni sistem za dojavu požara</td>
-            <td>DA</td>
-            <td>NE</td>
+            <td class="{{ $report->isChosen('param_3_3_13a', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_3_13a', 1) }}">NE</td>
             <td>&nbsp;</td>
         </tr>
 
         <tr>
             <td>b</td>
             <td>Stabilni sistem za detekciju eksplozivnih gasova</td>
-            <td>DA</td>
-            <td>NE</td>
+            <td class="{{ $report->isChosen('param_3_3_13b', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_3_13b', 1) }}">NE</td>
             <td>&nbsp;</td>
         </tr>
 
         <tr>
             <td>c</td>
             <td>Stabilni sistem za gašenje požara</td>
-            <td>DA</td>
-            <td>NE</td>
+            <td class="{{ $report->isChosen('param_3_3_13c', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_3_13c', 1) }}">NE</td>
             <td>&nbsp;</td>
         </tr>
 
         <tr>
             <td>d</td>
             <td>Sistem za odvođenje dima i toplote</td>
-            <td>DA</td>
-            <td>NE</td>
+            <td class="{{ $report->isChosen('param_3_3_13d', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_3_13d', 1) }}">NE</td>
             <td>&nbsp;</td>
         </tr>
 
@@ -496,64 +496,64 @@
         <tr>
             <td>18</td>
             <td>Da li su u objektu ugrađene sledeće instalacije i oprema?</td>
-            <td>DA</td>
-            <td>NE</td>
+            <td class="{{ $report->isChosen('param_3_3_18', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_3_18', 1) }}">NE</td>
             <td>&nbsp;</td>
         </tr>
 
         <tr>
             <td>a</td>
             <td>Protivpožarne klapne</td>
-            <td>DA</td>
-            <td>NE</td>
+            <td class="{{ $report->isChosen('param_3_3_18a', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_3_18a', 1) }}">NE</td>
             <td>&nbsp;</td>
         </tr>
 
         <tr>
             <td>b</td>
             <td>Protivpožarna rasveta</td>
-            <td>DA</td>
-            <td>NE</td>
+            <td class="{{ $report->isChosen('param_3_3_18b', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_3_18b', 1) }}">NE</td>
             <td>&nbsp;</td>
         </tr>
 
         <tr>
             <td>c</td>
             <td>Protivpožarni aparati</td>
-            <td>DA</td>
-            <td>NE</td>
+            <td class="{{ $report->isChosen('param_3_3_18c', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_3_18c', 1) }}">NE</td>
             <td>&nbsp;</td>
         </tr>
 
         <tr>
             <td>d</td>
             <td>Hidrantska mreža</td>
-            <td>DA</td>
-            <td>NE</td>
+            <td class="{{ $report->isChosen('param_3_3_18d', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_3_18d', 1) }}">NE</td>
             <td>&nbsp;</td>
         </tr>
 
         <tr>
             <td>e</td>
             <td>Uzemljenje el. instalacija</td>
-            <td>DA</td>
-            <td>NE</td>
+            <td class="{{ $report->isChosen('param_3_3_18e', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_3_18e', 1) }}">NE</td>
             <td>&nbsp;</td>
         </tr>
 
         <tr>
             <td>f</td>
             <td>Gromobranska instalacija</td>
-            <td>DA</td>
-            <td>NE</td>
+            <td class="{{ $report->isChosen('param_3_3_18f', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_3_18f', 1) }}">NE</td>
             <td>&nbsp;</td>
         </tr>
 
         <tr>
             <td>g</td>
             <td>Uređaji u Ex zaštiti</td>
-            <td>DA</td>
-            <td>NE</td>
+            <td class="{{ $report->isChosen('param_3_3_18g', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_3_18g', 1) }}">NE</td>
             <td>&nbsp;</td>
         </tr>
 
@@ -568,22 +568,22 @@
         <tr>
             <td>19.</td>
             <td colspan="2">Da li u objektu postoje odimne kupole?</td>
-            <td>DA</td>
-            <td>NE</td>
+            <td class="{{ $report->isChosen('param_3_3_19', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_3_19', 1) }}">NE</td>
         </tr>
 
         <tr>
             <td>20.</td>
             <td colspan="2">Da li je ugrađen centralni informacioni sistem?</td>
-            <td>DA</td>
-            <td>NE</td>
+            <td class="{{ $report->isChosen('param_3_3_20', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_3_20', 1) }}">NE</td>
         </tr>
 
         <tr>
             <td>21.</td>
             <td colspan="2">Da li je ugrađen sistem ozvučenja?</td>
-            <td>DA</td>
-            <td>NE</td>
+            <td class="{{ $report->isChosen('param_3_3_21', 0) }}">DA</td>
+            <td class="{{ $report->isChosen('param_3_3_21', 1) }}">NE</td>
         </tr>
     </table>
 
