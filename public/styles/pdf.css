@@ -9,7 +9,7 @@ body {
     font-family: sans-serif;
     /*margin: 0.5cm 0;*/
     text-align: justify;
-    font-size: 0.70em;
+    font-size: 12pt;
 }
 
 .header,
@@ -67,14 +67,11 @@ hr {
 
 .table-border, .table-border td {
     border: solid thin;
-    border-left: none;
-    border-right: none;
 }
 
 .table th,
 .table td {
-    padding: 2pt 0;
-    padding-right: 2pt;
+    padding: 2pt;
 }
 
 .table-condensed th,
@@ -84,8 +81,11 @@ hr {
 }
 
 .table td {
-    white-space: nowrap;
     vertical-align: top;
+}
+
+.nowrap {
+    white-space: nowrap;
 }
 
 .table th {
@@ -127,4 +127,13 @@ tr.border-bottom td, tr.border-bottom th {
 
 .border-bottom {
     border-top: solid thin;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 14pt;
+}
+
+.border {
+    border: 1px solid black;
 }
