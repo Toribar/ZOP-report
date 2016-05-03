@@ -85,8 +85,8 @@
         <strong>3.0 NALAZ O PRIMENJENIM MERAMA ZAŠTITE OD POŽARA</strong>
     </p>
     <p>3.1 Opšti podaci o objektu</p>
-    <p>3.2 Spoljašnje uređenje objekta u oblasti zaštite od požara</p>
-    <p>3.3 Unutrašnje uređenje objekta u oblasti zaštite od požara</p>
+    <p>3.2 Spoljašnje uredjenje objekta u oblasti zaštite od požara</p>
+    <p>3.3 Unutrašnje uredjenje objekta u oblasti zaštite od požara</p>
     <p>
         <strong>4.0 ZAKLJUCAK</strong>
         - izjava o primenjenim merama i stanju
@@ -99,7 +99,7 @@
     <h1>
         <strong>1.0 IMENOVANJE KOMISIJE</strong>
     </h1>
-    <p style="text-align: justify;">Na osnovu člana 8. Zakona o sticanju prava svojine na zemljištu, objektima  privrednog društva za proizvodnju i preradu čelika Železara Smederevo doo Smederevo, imenuje se komisija za Utvrđivanje podobnosti objekta za upotrebu u oblasti zaštite od požara;</p>
+    <p style="text-align: justify;">Na osnovu clana 8. Zakona o sticanju prava svojine na zemljištu, objektima  privrednog društva za proizvodnju i preradu celika Železara Smederevo doo Smederevo, imenuje se komisija za Utvrdjivanje podobnosti objekta za upotrebu u oblasti zaštite od požara;</p>
     <br>
     <p style="padding-bottom: 10px;">Predsednik komisije:</p>
 
@@ -417,7 +417,7 @@
 
         <tr>
             <td>9.</td>
-            <td>Da li su svi evakuacioni putevi obleženi na adekvatan način?</td>
+            <td>Da li su svi evakuacioni putevi obleženi na adekvatan nacin?</td>
             <td class="{{ $report->isChosen('param_3_3_9', 0) }}">DA</td>
             <td class="{{ $report->isChosen('param_3_3_9', 1) }}">NE</td>
             <td class="{{ $report->isChosen('param_3_3_9', 2) }}">DELIMICNO</td>
@@ -433,7 +433,7 @@
 
         <tr>
             <td>10.</td>
-            <td>Da li su na vidnom mestu istaknuti planovi evakuacije i pravila za postupanje u slučaju požara?</td>
+            <td>Da li su na vidnom mestu istaknuti planovi evakuacije i pravila za postupanje u slucaju požara?</td>
             <td class="{{ $report->isChosen('param_3_3_10', 0) }}">DA</td>
             <td class="{{ $report->isChosen('param_3_3_10', 1) }}">NE</td>
             <td class="{{ $report->isChosen('param_3_3_10', 2) }}"DELIMICNO</td>
@@ -479,7 +479,7 @@
 
         <tr>
             <td>d</td>
-            <td>Sistem za odvođenje dima i toplote</td>
+            <td>Sistem za odvodjenje dima i toplote</td>
             <td class="{{ $report->isChosen('param_3_3_13d', 0) }}">DA</td>
             <td class="{{ $report->isChosen('param_3_3_13d', 1) }}">NE</td>
             <td>&nbsp;</td>
@@ -495,7 +495,7 @@
 
         <tr>
             <td>18</td>
-            <td>Da li su u objektu ugrađene sledeće instalacije i oprema?</td>
+            <td>Da li su u objektu ugradjene sledeće instalacije i oprema?</td>
             <td class="{{ $report->isChosen('param_3_3_18', 0) }}">DA</td>
             <td class="{{ $report->isChosen('param_3_3_18', 1) }}">NE</td>
             <td>&nbsp;</td>
@@ -551,7 +551,7 @@
 
         <tr>
             <td>g</td>
-            <td>Uređaji u Ex zaštiti</td>
+            <td>Uredjaji u Ex zaštiti</td>
             <td class="{{ $report->isChosen('param_3_3_18g', 0) }}">DA</td>
             <td class="{{ $report->isChosen('param_3_3_18g', 1) }}">NE</td>
             <td>&nbsp;</td>
@@ -574,14 +574,14 @@
 
         <tr>
             <td>20.</td>
-            <td colspan="2">Da li je ugrađen centralni informacioni sistem?</td>
+            <td colspan="2">Da li je ugradjen centralni informacioni sistem?</td>
             <td class="{{ $report->isChosen('param_3_3_20', 0) }}">DA</td>
             <td class="{{ $report->isChosen('param_3_3_20', 1) }}">NE</td>
         </tr>
 
         <tr>
             <td>21.</td>
-            <td colspan="2">Da li je ugrađen sistem ozvučenja?</td>
+            <td colspan="2">Da li je ugradjen sistem ozvucenja?</td>
             <td class="{{ $report->isChosen('param_3_3_21', 0) }}">DA</td>
             <td class="{{ $report->isChosen('param_3_3_21', 1) }}">NE</td>
         </tr>
