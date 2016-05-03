@@ -69,14 +69,6 @@
         </div>
 
         <div class="form-group">
-            <label class="col-md-3 control-label">Fotografija spoljašnje hidratske mreže:</label>
-
-            <div class="col-md-6">
-                <input class="form-control" type="file" name="form_data[param_3_2_6]">
-            </div>
-        </div>
-
-        <div class="form-group">
             <label class="col-md-3 control-label">Napomena:</label>
 
             <div class="col-md-6">
@@ -102,18 +94,5 @@
                 <textarea name="form_data[param_3_2_8]" class="form-control" placeholder="kratak opis fizičkog stanja fasade, materijalizacija,..."></textarea>
             </div>
         </div>
-
-        <div class="form-group">
-            <div class="col-md-6 col-md-offset-3">
-                <input class="form-control" type="file" name="form_data[param_3_2_8a]">
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-6 col-md-offset-3">
-                <input class="form-control" type="file" name="form_data[param_3_2_8b]">
-            </div>
-        </div>
-
     </div>
 </div>
